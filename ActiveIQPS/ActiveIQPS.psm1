@@ -41,11 +41,11 @@ $script:Resource = @{
 
     CustomerInfo        = '/v1/system/list/level/customer'
 
-    CustomerInventory   = '/v2/system/details/level/customer/id/1002452'
+    CustomerInventory   = '/v2/system/details/level/customer/id/' + $M_Config.CustomerInfo.customer_id
 
-    CapacityInfo6months = '/v1/capacity/trend/level/customer/id/1002452'
+    CapacityInfo6months = '/v1/capacity/trend/level/customer/id/' + $M_Config.CustomerInfo.customer_id
 
-    SupportCase         = '/v1/support/cases/customer/1002452'
+    SupportCase         = '/v1/support/cases/customer/' + $M_Config.CustomerInfo.customer_id
 
 
 }
