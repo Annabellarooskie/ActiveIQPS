@@ -1,9 +1,9 @@
 <#
 .SYNOPSIS
-Returns NetApp Inventory for OHSU
+Returns NetApp Inventory for customer
 
 .DESCRIPTION
-Returns NetApp Inventory for OHSU
+Returns NetApp Inventory for customer
 
 .EXAMPLE
 Get-ActiveIQInventory
