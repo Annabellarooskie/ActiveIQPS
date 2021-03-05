@@ -1,5 +1,5 @@
 ## ActiveIQPS
 
-This module allows you to interact with NetApp ActiveIQ system via Powershell. A configuration file is required in order to insert customer specific configurations.
+This module allows you to interact with NetApp ActiveIQ system via Powershell.  There is a lot of development left in this module so feel free to contiribute. This module is designed to be run by bots via a task scheduler, so there are no required parameters for the public functions.  To this end, a configuration file is required in order to insert customer specific configurations.
 
-Token management is achieved with this module through a scheduled task with a simple get cmdlet in this module like Get-ActiveIQInventory.
+Token management is achieved through loading the module via scheduled task which could contain a simple get cmdlet like Get-ActiveIQInventory.
