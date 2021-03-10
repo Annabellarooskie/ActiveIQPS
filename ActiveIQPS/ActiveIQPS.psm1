@@ -41,6 +41,8 @@ $script:Resource = @{
 
     CustomerInfo        = '/v1/system/list/level/customer'
 
+    HealthRisk          = '/v1/health/details/level/customer/id/' + $M_Config.CustomerInfo.customer_id
+
     CustomerInventory   = '/v2/system/details/level/customer/id/' + $M_Config.CustomerInfo.customer_id
 
     CapacityInfo6months = '/v1/capacity/trend/level/customer/id/' + $M_Config.CustomerInfo.customer_id
