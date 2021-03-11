@@ -4,4 +4,4 @@ This module allows you to interact with NetApp ActiveIQ system via Powershell.  
 
 There is a dependancy module Vault that stores and retrieves tokens from the Windows Credential Manager. The code is here: https://github.com/LastMisadventure/Vault
 
-On-going token management can be achieved through loading the module via scheduled task which could contain a simple get cmdlet like Get-ActiveIQInventory. The frequency of the task should run less than the frequency of the access token expiry, which is one hour.
+On-going token management can be achieved through loading the module via scheduled task of a simple get cmdlet call like Get-ActiveIQInventory. The frequency of the task should run less than the frequency of the access token expiry, which is one hour.
