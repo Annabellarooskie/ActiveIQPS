@@ -52,18 +52,26 @@ $script:Resource = @{
 
 }
 
-RequestAccessToken
+try {
 
-$authTokens = GetTokenSet
+    RequestAccessToken
 
-$script:AuthHeader = @{
+    $authTokens = GetTokenSet
 
-    "accept"             = "application/json"
-    "authorizationtoken" = $authTokens.access
+    $script:AuthHeader = @{
+
+        "accept"             = "application/json"
+        "authorizationtoken" = $authTokens.access
+
+    }
+
+    Write-Host $script:AuthHeader
 
 }
 
-Write-Host $script:AuthHeader
+catch {
 
+    Write-Error -Message "Failed to request token" -ErrorAction Stop
+}
 
 
